@@ -22,7 +22,10 @@ listaDeTeclas[0].onclick = tocaSomPom;
 let contador = 0;
 
 while(contador < 9){
-    listaDeTeclas[contador].onclick = function(){
+
+const instrumento = listaDeTeclas[contador].classList[1];
+
+const tecla = listaDeTeclas[contador].onclick = function(){
     tocaSom('#som_tecla_clap');
     };
 
